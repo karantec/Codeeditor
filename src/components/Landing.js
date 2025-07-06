@@ -90,13 +90,12 @@ const Landing = () => {
     };
     const options = {
       method: "POST",
-      url: process.env.REACT_APP_RAPID_API_URL,
+      url: "https://judge0-ce.p.rapidapi.com/about",
       params: { base64_encoded: "true", fields: "*" },
       headers: {
         "content-type": "application/json",
-        "Content-Type": "application/json",
-        "X-RapidAPI-Host": process.env.REACT_APP_RAPID_API_HOST,
-        "X-RapidAPI-Key": process.env.REACT_APP_RAPID_API_KEY,
+        "X-RapidAPI-Host": "judge0-ce.p.rapidapi.com",
+        "X-RapidAPI-Key": "c9c6525d1msh6a6ae5cf59c4fbap1f742ajsn19cdeddbc79f",
       },
       data: formData,
     };
